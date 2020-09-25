@@ -15,7 +15,7 @@ export default class ModalManager extends Component {
           ? modal.componentClass.component({
               ...modal.attrs,
               onshow: this.animateShow.bind(this),
-              onhide: this.animateHide.bind(this),
+              animateHide: this.animateHide.bind(this),
               state: this.attrs.state,
             })
           : ''}

@@ -32,7 +32,7 @@ export default class Modal extends Component {
     // we've just opened up a new one, and accordingly,
     // we don't need to show a hide animation.
     if (!this.attrs.state.modal) {
-      this.attrs.onhide();
+      this.attrs.animateHide();
     }
   }
 
